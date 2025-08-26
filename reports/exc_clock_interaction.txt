@@ -1,0 +1,24 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
+| Date         : Fri Jul 18 14:55:29 2025
+| Host         : pool08.ifm.uni-ulm.de running 64-bit Rocky Linux 9.6 (Blue Onyx)
+| Command      : report_clock_interaction -delay_type min_max -significant_digits 3 -file ./exc_clock_interaction.txt
+| Design       : global_toplevel
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+----------------------------------------------------------------------------------------------------------------------
+
+Clock Interaction Report
+
+Clock Interaction Table
+-----------------------
+
+                            WNS                                TNS Failing  TNS Total    WNS Path         WHS                            THS Failing  THS Total    WHS Path         Clock-Pair           Inter-Clock         
+From Clock    To Clock      Clock Edges      WNS(ns)  TNS(ns)    Endpoints    Endpoints  Requirement(ns)  Clock Edges  WHS(ns)  THS(ns)    Endpoints    Endpoints  Requirement(ns)  Classification       Constraints         
+------------  ------------  -----------  -----------  -------  -----------  -----------  ---------------  -----------  -------  -------  -----------  -----------  ---------------  -------------------  ------------------  
+CLK125_CLK    CLK125_CLK                                                 0          483                                                            0          483                   Ignored              False Path          
+CLK2048_CLK   CLK125_CLK                                                 0          108                                                            0          108                   Ignored              False Path          
+CLK2048_CLK   CLK2048_CLK   rise - rise   488191.500    0.000            0         1087       488281.250  rise - rise    0.057    0.000            0         1087            0.000  Clean                Partial False Path  
+
+

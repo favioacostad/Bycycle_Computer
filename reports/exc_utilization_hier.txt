@@ -1,0 +1,64 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
+| Date         : Fri Jul 18 14:55:29 2025
+| Host         : pool08.ifm.uni-ulm.de running 64-bit Rocky Linux 9.6 (Blue Onyx)
+| Command      : report_utilization -hierarchical -file ./exc_utilization_hier.txt
+| Design       : global_toplevel
+| Device       : 7z010clg400-1
+| Design State : Routed
+--------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------------------+--------------------------------+------------+------------+---------+------+-----+--------+--------+--------------+
+|           Instance           |             Module             | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++------------------------------+--------------------------------+------------+------------+---------+------+-----+--------+--------+--------------+
+| global_toplevel              |                          (top) |       2846 |       2846 |       0 |    0 | 848 |      0 |      2 |            2 |
+|   (global_toplevel)          |                          (top) |          0 |          0 |       0 |    0 |   8 |      0 |      0 |            0 |
+|   INST_CLK_DIVIDER_BIKE      |               CLK_DIVIDER_BIKE |         15 |         15 |       0 |    0 |  17 |      0 |      0 |            0 |
+|   KMH_TEST_BIKE              |                       KMH_TEST |         72 |         72 |       0 |    0 |  16 |      0 |      0 |            0 |
+|   LCD_CONTROLLER_INST        |                 LCD_Controller |        417 |        417 |       0 |    0 | 279 |      0 |      2 |            1 |
+|     (LCD_CONTROLLER_INST)    |                 LCD_Controller |        112 |        112 |       0 |    0 |  82 |      0 |      0 |            0 |
+|     lcd_clocks               |               LCD_ClockDivider |          3 |          3 |       0 |    0 |   5 |      0 |      0 |            0 |
+|     lcd_controller           |                    LCD_Control |          7 |          7 |       0 |    0 |  19 |      0 |      0 |            0 |
+|     state_machine_signals    |                 LCD_SM_Signals |          9 |          9 |       0 |    0 |  36 |      0 |      0 |            0 |
+|     state_machine_states     |                  LCD_SM_States |        127 |        127 |       0 |    0 |  49 |      0 |      0 |            0 |
+|     stream_data              |               LCD_PS_Converter |         10 |         10 |       0 |    0 |   6 |      0 |      0 |            0 |
+|     symbols_big              |                   LCD_Bram_Big |         69 |         69 |       0 |    0 |  41 |      0 |      1 |            1 |
+|       (symbols_big)          |                   LCD_Bram_Big |         65 |         65 |       0 |    0 |  41 |      0 |      0 |            1 |
+|       BRAM_SDP_MACRO_inst    | BRAM_SDP_MACRO__parameterized0 |          4 |          4 |       0 |    0 |   0 |      0 |      1 |            0 |
+|     symbols_small            |                 LCD_Bram_Small |         82 |         82 |       0 |    0 |  41 |      0 |      1 |            0 |
+|       (symbols_small)        |                 LCD_Bram_Small |         78 |         78 |       0 |    0 |  41 |      0 |      0 |            0 |
+|       BRAM_SDP_MACRO_inst    |                 BRAM_SDP_MACRO |          4 |          4 |       0 |    0 |   0 |      0 |      1 |            0 |
+|   PULSE_SHAPE_MODE           |                    PULSE_SHAPE |          1 |          1 |       0 |    0 |   4 |      0 |      0 |            0 |
+|   PULSE_SHAPE_REED           |                  PULSE_SHAPE_0 |          1 |          1 |       0 |    0 |   4 |      0 |      0 |            0 |
+|   STUDENTS_DESIGN            |            TOP_OF_YOUR_BICYCLE |       2340 |       2340 |       0 |    0 | 520 |      0 |      0 |            1 |
+|     (STUDENTS_DESIGN)        |            TOP_OF_YOUR_BICYCLE |         61 |         61 |       0 |    0 |   0 |      0 |      0 |            0 |
+|     average_speed_unit       |                  average_speed |       1058 |       1058 |       0 |    0 |  62 |      0 |      0 |            1 |
+|     blinker_unit             |                        blinker |         13 |         13 |       0 |    0 |  14 |      0 |      0 |            0 |
+|     controller_unit          |                     controller |         18 |         18 |       0 |    0 |   3 |      0 |      0 |            0 |
+|     display_driver           |             display_controller |        203 |        203 |       0 |    0 | 301 |      0 |      0 |            0 |
+|       (display_driver)       |             display_controller |          0 |          0 |       0 |    0 |  32 |      0 |      0 |            0 |
+|       bcd_converter          |       dual2bcd__parameterized0 |         62 |         62 |       0 |    0 |  81 |      0 |      0 |            0 |
+|       conv_high              |                       dual2bcd |         46 |         46 |       0 |    0 |  63 |      0 |      0 |            0 |
+|       conv_low               |                     dual2bcd_1 |         53 |         53 |       0 |    0 |  63 |      0 |      0 |            0 |
+|       kmh_ones               |                      bcd2ascii |          1 |          1 |       0 |    0 |   0 |      0 |      0 |            0 |
+|       kmh_tens               |                    bcd2ascii_2 |          1 |          1 |       0 |    0 |   0 |      0 |      0 |            0 |
+|       kmh_to_bcd             |                     dual2bcd_3 |         42 |         42 |       0 |    0 |  62 |      0 |      0 |            0 |
+|     instantaneous_speed_unit |            instantaneous_speed |        328 |        328 |       0 |    0 |  60 |      0 |      0 |            0 |
+|     max_speed_unit           |                      max_speed |          4 |          4 |       0 |    0 |   7 |      0 |      0 |            0 |
+|     tick_1s_generator_unit   |              tick_1s_generator |         11 |         11 |       0 |    0 |  12 |      0 |      0 |            0 |
+|     trip_distance_unit       |                  trip_distance |        375 |        375 |       0 |    0 |  38 |      0 |      0 |            0 |
+|     trip_time_unit           |                      trip_time |        274 |        274 |       0 |    0 |  23 |      0 |      0 |            0 |
++------------------------------+--------------------------------+------------+------------+---------+------+-----+--------+--------+--------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

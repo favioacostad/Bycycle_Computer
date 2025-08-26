@@ -1,0 +1,18 @@
+verilog xil_defaultlib  \
+"../sources/student/average_speed.v" \
+"../sources/submodules/bcd2ascii.v" \
+"../sources/student/blinker.v" \
+"../sources/student/controller.v" \
+"../sources/student/display_controller.v" \
+"../sources/submodules/dual2bcd.v" \
+"../sources/student/instantaneous_speed.v" \
+"../sources/student/max_speed.v" \
+"../sources/student/tick_1s_generator.v" \
+"../sources/student/top_of_your_bicycle.v" \
+"../sources/student/trip_distance.v" \
+"../sources/student/trip_time.v" \
+"../sources/testbench/tb_bicycle.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

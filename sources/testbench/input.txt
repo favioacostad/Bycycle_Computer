@@ -1,0 +1,47 @@
+    10   0  01                Meaning:  time [ms]   Speed   Mode  Reset
+  2500   0  10   Mode => avs
+  4000   0  10   Mode => tim
+  5500   0  10   Mode => max
+  6000  20  00   v = 20 kmh
+  9000  40  00   v = 40 kmh
+ 12000  60  00   v = 60 kmh 
+ 15000  40  00   v = 40 kmh
+ 18000  95  00   v = 95 kmh
+ 20000  95  10   Mode => day
+ 24000  95  10   Mode => avs
+ 27000   0  00   v = 0 kmh 
+ 32000   0  10   Mode => max  
+ 33500   0  10   Mode => day
+ 35000   0  10   Mode => avs
+ 35500   0  10   Mode => tim
+ 36000   0  01   reset
+ 37500   0  10   Mode => avs 
+ 39000   0  10   Mode => tim
+ 40500   0  10   Mode => max
+ 42000  95  00   v = 95 kmh
+ 43500  80  00   v = 80 kmh
+ 45000  80  01   reset
+ 74000  80  10   Mode => avs
+ 75000  80  10   Mode => tim
+111000   0  00   v = 0 kmh
+118500   0  10   Mode => max
+120000   0  10   Mode => day
+121500   0  10   Mode => avs
+122000   0  10   Mode => tim
+123000   0  10   Mode => max
+124000   0  10   Mode => day
+125000  30  00   v = 30 kmh
+130000   9  00   v = 9 kmh
+135000  12  00   v = 12 kmh
+140000  33  00   v = 33 kmh
+145000  64  00   v = 64 kmh
+150000   0  00   v = 0 kmh
+171000   1  00   v = 1 kmh
+171500   0  00   v = 0 kmh
+181000   1  00   v = 1 kmh
+181500   0  00   v = 0 kmh
+182000   0  10   Mode => avs
+183000   0  10   Mode => tim
+184000   0  10   Mode => max
+185000   0  10   Mode => day
+999000   0  00   :last line must always be out of the simulation range

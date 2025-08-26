@@ -1,0 +1,10 @@
+vivado/*
+!vivado/.empty
+#!vivado/exercise_test.srcs/*
+#Ignore backup files
+**/*.*~
+#And ignore vivado files
+**/*.jou
+**/*.log
+#Ignore pid files
+/vivado_pid*.str
